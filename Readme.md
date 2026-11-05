@@ -37,3 +37,27 @@ untuk kebutuhan portofolio.
 ## Project Status
 
 Development - Stage 1
+
+## Raw Data Ingestion
+
+Data sumber berasal dari file Excel simulasi bengkel
+Firsty Jaya Motor dengan tiga sheet:
+
+- Data Inventaris
+- Data Penjualan
+- Riwayat Transaksi
+
+Data dimuat menggunakan Python, Pandas, dan SQLAlchemy
+ke PostgreSQL schema `raw`.
+
+### Menjalankan ingestion
+
+```bash
+python src/load_raw.py
+```
+
+### Raw tables
+
+- raw.inventaris
+- raw.penjualan
+- raw.riwayat
